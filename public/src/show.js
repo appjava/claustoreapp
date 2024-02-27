@@ -1,20 +1,10 @@
-/*
-if ("serviceWorker" in navigator) {
-	  window.addEventListener("load", function() {
-		navigator.serviceWorker
-		  .register("/serviceWorker.js")
-		  .then(res => console.log("service worker registered"))
-		  .catch(err => console.log("service worker not registered", err))
-	  })
-	}
-*/
 
 let shop = document.getElementById("shop") || [];
 let show = document.getElementById("show");
 let welco = document.getElementById("welcome") || [];
 let nameShowcase = document.getElementById("nameShowcase");
 let onDet = document.getElementById("onlyDetails") || [];
-let standItemsData = [];
+
 let productShow = [];
 
 let basket = JSON.parse(localStorage.getItem("data")) || [];
@@ -28,7 +18,7 @@ let showWelco = () => {
   return (nameShowcase.innerHTML = productSelect.map((x) => {
     
     let { id } = x;
-    let search = standItemsData.find((x) => x.id === id) || [];
+    let search = shopItemsData.find((x) => x.id === id) || [];
     
     return `
     <div class="detail">
@@ -38,23 +28,21 @@ let showWelco = () => {
 
 };
 
-
-
 let showProduct = () => {
   showWelco();
   
   return (show.innerHTML = productSelect.map((x) => {
     
       let { id } = x;
-      let search = standItemsData.find((x) => x.id === id) || [];
+      let search = shopItemsData.find((x) => x.id === id) || [];
       let search2 = basket.find((x) => x.id === id) || [];
       return `
       
       <div class="showcase">
-          <img class="" src=${search.img === undefined ? ["images/logos/logoPlantaZula.png"] : search.img} >
-          <img class="" src=${search.img1 === undefined ? ["images/logos/logoPlantaZula.png"] : search.img1} >
-          <img class="" src=${search.img2 === undefined ? ["images/logos/logoPlantaZula.png"] : search.img2} >
-          <img class="" src=${search.img3 === undefined ? ["images/logos/logoPlantaZula.png"] : search.img3} >
+          <img class="" src=${search.img === undefined ? ["images/logos/logoClau.png"] : search.img} >
+          <img class="" src=${search.img1 === undefined ? ["images/logos/logoClau.png"] : search.img1} >
+          <img class="" src=${search.img2 === undefined ? ["images/logos/logoClau.png"] : search.img2} >
+          <img class="" src=${search.img3 === undefined ? ["images/logos/logoClau.png"] : search.img3} >
       </div>
       <div>
       <div class="detail">
@@ -108,35 +96,6 @@ let TotalAmount = () => {
 
 TotalAmount();
 
-let generateShop = () => {
-  return (shop.innerHTML = standItemsData
-    .map((x) => {
-      let { id, name, price, desc, img } = x;
-      let search = basket.find((x) => x.id === id) || [];
-      return `
-    <div id=product-id-${id} class="item">
-        <img class="img-item" src=${img} alt="">
-        <div class="details">
-          <h4 class="name-item">${name}</h4>
-          <p class="desc-item">"${desc}"</p>
-        </div>
-        <div class="price-quantity">
-          <h3 class="price-item">$ ${price} COP</h3>
-          <div class="buttons">
-            <i onclick="increment(${id})" class="bi bi-cart-plus-fill"></i>
-            <div id=${id} class="quantity-item">
-              ${search.item === undefined ? "" : search.item}
-            </div>
-          </div>
-        </div> 
-    </div>
-    `;
-    })
-    .join(""));
-};
-
-allPlants();
-//generateShop();
 showProduct();
 
 let increment = (id) => {
@@ -186,187 +145,4 @@ let calculation = () => {
 };
 
 calculation();
-
-function allPlants(){
-  
-  standItemsData = [];
-  suculentas.forEach((planta) => {
-    standItemsData.push(planta);
-  });
-  bromelias.forEach((planta) => {
-    standItemsData.push(planta);
-  });
-  orquideas.forEach((planta) => {
-    standItemsData.push(planta);
-  });
-  anturios.forEach((planta) => {
-    standItemsData.push(planta);
-  });
-  cartuchos.forEach((planta) => {
-    standItemsData.push(planta);
-  });
-  platiceros.forEach((planta) => {
-    standItemsData.push(planta);
-  });
-  complementos.forEach((planta) => {
-    standItemsData.push(planta);
-  });
- 
-  welco.innerHTML = "";
-  //onDet.innerHTML = "";
-  //welcome();
-  //generateShop();
-};
-
-function onlySuculentas(){
-  standItemsData = [];
-  suculentas.forEach((planta) => {
-    standItemsData.push(planta);
-  });
-  welco.innerHTML = "";
-  //onDet.innerHTML = "";
-  detailSuculentas();
-  generateShop();
-};
-function onlyBromelias(){
-  standItemsData = [];
-  bromelias.forEach((planta) => {
-    standItemsData.push(planta);
-  });
-  welco.innerHTML = "";
-  //onDet.innerHTML = "";
-  detailBromelias();
-  generateShop();
-};
-function onlyOrquideas(){
-  standItemsData = [];
-  orquideas.forEach((planta) => {
-    standItemsData.push(planta);
-  });
-  welco.innerHTML = "";
-  //onDet.innerHTML = "";
-  detailOrquideas();
-  generateShop();
-};
-function onlyAnturios(){
-  standItemsData = [];
-  anturios.forEach((planta) => {
-    standItemsData.push(planta);
-  });
-  welco.innerHTML = "";
-  //onDet.innerHTML = "";
-  detailAnturios();
-  generateShop();
-};
-function onlyCartuchos(){
-  standItemsData = [];
-  cartuchos.forEach((planta) => {
-    standItemsData.push(planta);
-  });
-  welco.innerHTML = "";
-  //onDet.innerHTML = "";
-  detailCartuchos();
-  generateShop();
-};
-function onlyPlaticeros(){
-  standItemsData = [];
-  platiceros.forEach((planta) => {
-    standItemsData.push(planta);
-  });
-  welco.innerHTML = "";
-  //onDet.innerHTML = "";
-  detailPlaticeros();
-  generateShop();
-};
-function onlyComplementos(){
-  standItemsData = [];
-  complementos.forEach((planta) => {
-    standItemsData.push(planta);
-  });
-  welco.innerHTML = "";
-  //onDet.innerHTML = "";
-  detailComplementos();
-  generateShop();
-};
-
-function welcome() {
-	welco.innerHTML = `
-	<div class="detail" id="detail">
-	
-	<p class="detalle">¡Bienvenido a nuestro maravilloso mundo! Aquí encontrarás una exquisita selección de plantas que llenarán tu vida de color, frescura y belleza natural. Explora nuestra colección y déjate cautivar por la magia de la naturaleza.</p>
-	
-	</div>
-	
-	`;
-};
-function detailBromelias() {
-	onDet.innerHTML = `
-	<div class="detail" id="detail">
-	<h3 class="detalle">Bromelias</h3>
-	<p class="detalle">Explora el encanto tropical de las bromelias: hojas vibrantes, flores en espiral y versatilidad para interiores y exteriores. ¡Embellece con magia exótica!</p>
-	
-	</div>
-	
-	`;
-};
-function detailSuculentas() {
-	onDet.innerHTML = `
-	<div class="detail" id="detail">
-	<h3 class="detalle">Suculentas</h3>
-	<p class="detalle">Descubre la elegancia y diversidad de las suculentas: hojas carnosas, colores cautivadores y bajo mantenimiento. ¡Decora con encanto natural y sofisticado!</p>
-	
-	</div>
-	
-	`;
-};
-function detailOrquideas() {
-	onDet.innerHTML = `
-	<div class="detail" id="detail">
-	<h3 class="detalle">Orquídeas</h3>
-	<p class="detalle">Descubre la elegancia de las orquídeas: colores, formas y cuidado sencillo. ¡Flores espectaculares para tu hogar!</p>
-	
-	</div>
-	
-	`;
-};
-function detailAnturios() {
-	onDet.innerHTML = `
-	<div class="detail" id="detail">
-	<h3 class="detalle">Anturios</h3>
-	<p class="detalle">Descubre los anturios: exuberantes inflorescencias, colores vibrantes y cuidado sencillo. ¡Tropicalidad y pasión para tu hogar!</p>
-	
-	</div>
-	
-	`;
-};
-function detailCartuchos() {
-	onDet.innerHTML = `
-	<div class="detail" id="detail">
-	<h3 class="detalle">Cartuchos</h3>
-	<p class="detalle">Explora los cartuchos: flores singulares, colores vibrantes y cuidado sencillo. ¡Elegancia acuática para tu espacio!</p>
-	
-	</div>
-	
-	`;
-};
-function detailPlaticeros() {
-	onDet.innerHTML = `
-	<div class="detail" id="detail">
-	<h3 class="detalle">Platiceros</h3>
-	<p class="detalle">Sumérgete en la belleza de los platiceros: hojas exóticas, colores cautivadores y facilidad de cuidado. ¡Fascinación tropical en tu hogar!</p>
-	
-	</div>
-	
-	`;
-};
-function detailComplementos() {
-	onDet.innerHTML = `
-	<div class="detail" id="detail">
-	<h3 class="detalle">Complementos</h3>
-	<p class="detalle">¡Embellece tu jardín con encantadores complementos! Materas elegantes, soportes prácticos y abonos nutritivos, todo en un solo lugar.</p>
-	
-	</div>
-	
-	`;
-};
 

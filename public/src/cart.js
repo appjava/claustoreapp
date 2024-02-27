@@ -1,13 +1,3 @@
-/*
-if ("serviceWorker" in navigator) {
-	  window.addEventListener("load", function() {
-		navigator.serviceWorker
-		  .register("/serviceWorker.js")
-		  .then(res => console.log("service worker registered"))
-		  .catch(err => console.log("service worker not registered", err))
-	  })
-	}
-*/
 
 let contact = document.getElementById("contact");
 let label = document.getElementById("label");
@@ -282,7 +272,6 @@ if (Name == "" || Email == "" ||  Phone == ""){
     clearCart()
 }
 
-
 /*
 userName = document.getElementById("name").value;
 userEmail = document.getElementById("email").value;
@@ -299,7 +288,6 @@ console.log("Total Compra: " + total + " COP");
 //clearCart();
 
 }
-
 
 function gracias(){ 
   alert("Pedido enviado.\nEn breve nos comunicaremos para definir los detalles del envío y concretar la compra.\nGracias por visitarnos!!!")

@@ -90,7 +90,7 @@ a {
   top: -9px;
   right: -3px;
   font-size: 15px;
-  background-color: #01b41f;
+  background-color: #a501b4;
   color: white;
   padding: 3px 6px;
   border-radius: 6px;
@@ -128,7 +128,7 @@ a {
   top: 12px;
   right: 12px;
   font-size: 18px;
-  color: #01b41f;
+  color: #a501b4;
 }
 
 #menu-bar:checked ~ .cates{
@@ -139,7 +139,7 @@ a {
   display: none;
 }
 .menu p:hover{
-  color: #01b41f;
+  color: #a501b4;
   transform: scale(1.2, 1.2) translateX(12%);
 }
 .menu p{
@@ -206,7 +206,7 @@ a {
   max-width: 1200px;
 }
 #resaltado{
-  background-color: #01b41f;
+  background-color: #a501b4;
   color: white;
 }
 
@@ -276,7 +276,7 @@ a {
   font-size: 14px;
 }
 .bi-cart-plus-fill{
-  color: #01b41f;
+  color: #a501b4;
   cursor: pointer;
   font-size: 15px;
   margin: 0;
@@ -334,7 +334,7 @@ a {
 }
 
 .bi-plus-circle-fill {
-  color: #01b41f;
+  color: #a501b4;
   cursor: pointer;
 }
 
@@ -352,7 +352,7 @@ a {
   cursor: pointer;
 }
 .bi-plus-square-fill{
-  color: #01b41f;
+  color: #a501b4;
   cursor: pointer;
 }
 .bi-trash{
@@ -369,7 +369,7 @@ a {
   padding-left: 9px;
   padding-right: 9px;
   margin-left: 0px;
-  border: solid 1px #01b41f;
+  border: solid 1px #a501b4;
 }
 
 /**
@@ -396,7 +396,7 @@ a {
 }
 
 .checkout {
-  background-color: #01b41f;
+  background-color: #a501b4;
 }
 .removeAll {
   background-color: #212529;
@@ -515,7 +515,7 @@ input {
 
 #submit {
   color: #FDFDFD;
-  background-color: #01b41f;
+  background-color: #a501b4;
   border: 0;
   padding: 12px;
   border-radius: 9px;
@@ -534,7 +534,7 @@ input {
   font-family: 'Rubik', sans-serif;
   text-align: center;
   color: white;
-  background-color: #01b41f;
+  background-color: #a501b4;
   border: none;
   border-radius: 6px 0px 0px 6px;
   width: 90%;

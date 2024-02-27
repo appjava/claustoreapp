@@ -9,6 +9,16 @@ if ("serviceWorker" in navigator) {
 	}
 */
 
+document.getElementById("nameCatA").innerHTML = nameCatA;
+document.getElementById("namCatA").innerHTML = nameCatA;
+document.getElementById("nameCatB").innerHTML = nameCatB;
+document.getElementById("namCatB").innerHTML = nameCatB;
+document.getElementById("nameCatC").innerHTML = nameCatC;
+document.getElementById("namCatC").innerHTML = nameCatC;
+document.getElementById("nameCatD").innerHTML = nameCatD;
+document.getElementById("namCatD").innerHTML = nameCatD;
+document.getElementById("nameCatE").innerHTML = nameCatE;
+document.getElementById("namCatE").innerHTML = nameCatE;
 
 let shop = document.getElementById("shop");
 let show = document.getElementById("show") || [];
@@ -83,10 +93,8 @@ let generateShop = () => {
     .join(""));
 };
 
-
 allPlants();
 generateShop();
-
 
 let increment = (id) => {
   let selectedItem = id;
@@ -182,25 +190,19 @@ calculation();
 function allPlants(){
   
   standItemsData = [];
-  suculentas.forEach((planta) => {
+  catA.forEach((planta) => {
     standItemsData.push(planta);
   });
-  bromelias.forEach((planta) => {
+  catB.forEach((planta) => {
     standItemsData.push(planta);
   });
-  orquideas.forEach((planta) => {
+  catC.forEach((planta) => {
     standItemsData.push(planta);
   });
-  anturios.forEach((planta) => {
+  catD.forEach((planta) => {
     standItemsData.push(planta);
   });
-  cartuchos.forEach((planta) => {
-    standItemsData.push(planta);
-  });
-  platiceros.forEach((planta) => {
-    standItemsData.push(planta);
-  });
-  complementos.forEach((planta) => {
+  catE.forEach((planta) => {
     standItemsData.push(planta);
   });
  
@@ -210,76 +212,57 @@ function allPlants(){
   generateShop();
 };
 
-function onlySuculentas(){
+function onlyCatA(){
   standItemsData = [];
-  suculentas.forEach((planta) => {
+  catA.forEach((planta) => {
     standItemsData.push(planta);
   });
   welco.innerHTML = "";
   onDet.innerHTML = "";
-  detailSuculentas();
+  detailCatA();
   generateShop();
 };
-function onlyBromelias(){
+function onlyCatB(){
   standItemsData = [];
-  bromelias.forEach((planta) => {
+  catB.forEach((planta) => {
     standItemsData.push(planta);
   });
   welco.innerHTML = "";
   onDet.innerHTML = "";
-  detailBromelias();
+  detailCatB();
   generateShop();
 };
-function onlyOrquideas(){
+function onlyCatC(){
   standItemsData = [];
-  orquideas.forEach((planta) => {
+  catC.forEach((planta) => {
     standItemsData.push(planta);
   });
   welco.innerHTML = "";
   onDet.innerHTML = "";
-  detailOrquideas();
+  detailCatC();
   generateShop();
 };
-function onlyAnturios(){
+function onlyCatD(){
   standItemsData = [];
-  anturios.forEach((planta) => {
+  catD.forEach((planta) => {
     standItemsData.push(planta);
   });
   welco.innerHTML = "";
   onDet.innerHTML = "";
-  detailAnturios();
+  detailCatD();
   generateShop();
 };
-function onlyCartuchos(){
+function onlyCatE(){
   standItemsData = [];
-  cartuchos.forEach((planta) => {
+  catE.forEach((planta) => {
     standItemsData.push(planta);
   });
   welco.innerHTML = "";
   onDet.innerHTML = "";
-  detailCartuchos();
+  detailCatE();
   generateShop();
 };
-function onlyPlaticeros(){
-  standItemsData = [];
-  platiceros.forEach((planta) => {
-    standItemsData.push(planta);
-  });
-  welco.innerHTML = "";
-  onDet.innerHTML = "";
-  detailPlaticeros();
-  generateShop();
-};
-function onlyComplementos(){
-  standItemsData = [];
-  complementos.forEach((planta) => {
-    standItemsData.push(planta);
-  });
-  welco.innerHTML = "";
-  onDet.innerHTML = "";
-  detailComplementos();
-  generateShop();
-};
+
 
 function welcome() {
 	welco.innerHTML = `
@@ -291,74 +274,56 @@ function welcome() {
 	
 	`;
 };
-function detailBromelias() {
+function detailCatB() {
 	onDet.innerHTML = `
 	<div class="detail" id="detail">
-	<h3 class="detalle">Bromelias</h3>
+	<h3 class="detalle">${nameCatB}</h3>
 	<p class="detalle">Explora el encanto tropical de las bromelias: hojas vibrantes, flores en espiral y versatilidad para interiores y exteriores. ¡Embellece con magia exótica!</p>
 	
 	</div>
 	
 	`;
 };
-function detailSuculentas() {
+function detailCatA() {
 	onDet.innerHTML = `
 	<div class="detail" id="detail">
-	<h3 class="detalle">Suculentas</h3>
+	<h3 class="detalle">${nameCatA}</h3>
 	<p class="detalle">Descubre la elegancia y diversidad de las suculentas: hojas carnosas, colores cautivadores y bajo mantenimiento. ¡Decora con encanto natural y sofisticado!</p>
 	
 	</div>
 	
 	`;
 };
-function detailOrquideas() {
+function detailCatC() {
 	onDet.innerHTML = `
 	<div class="detail" id="detail">
-	<h3 class="detalle">Orquídeas</h3>
+	<h3 class="detalle">${nameCatC}</h3>
 	<p class="detalle">Descubre la elegancia de las orquídeas: colores, formas y cuidado sencillo. ¡Flores espectaculares para tu hogar!</p>
 	
 	</div>
 	
 	`;
 };
-function detailAnturios() {
+function detailCatD() {
 	onDet.innerHTML = `
 	<div class="detail" id="detail">
-	<h3 class="detalle">Anturios</h3>
+	<h3 class="detalle">${nameCatD}</h3>
 	<p class="detalle">Descubre los anturios: exuberantes inflorescencias, colores vibrantes y cuidado sencillo. ¡Tropicalidad y pasión para tu hogar!</p>
 	
 	</div>
 	
 	`;
 };
-function detailCartuchos() {
+function detailCatE() {
 	onDet.innerHTML = `
 	<div class="detail" id="detail">
-	<h3 class="detalle">Cartuchos</h3>
+	<h3 class="detalle">${nameCatE}</h3>
 	<p class="detalle">Explora los cartuchos: flores singulares, colores vibrantes y cuidado sencillo. ¡Elegancia acuática para tu espacio!</p>
 	
 	</div>
 	
 	`;
 };
-function detailPlaticeros() {
-	onDet.innerHTML = `
-	<div class="detail" id="detail">
-	<h3 class="detalle">Platiceros</h3>
-	<p class="detalle">Sumérgete en la belleza de los platiceros: hojas exóticas, colores cautivadores y facilidad de cuidado. ¡Fascinación tropical en tu hogar!</p>
-	
-	</div>
-	
-	`;
-};
-function detailComplementos() {
-	onDet.innerHTML = `
-	<div class="detail" id="detail">
-	<h3 class="detalle">Complementos</h3>
-	<p class="detalle">¡Embellece tu jardín con encantadores complementos! Materas elegantes, soportes prácticos y abonos nutritivos, todo en un solo lugar.</p>
-	
-	</div>
-	
-	`;
-};
+
+
 
