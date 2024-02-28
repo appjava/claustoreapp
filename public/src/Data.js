@@ -80,7 +80,7 @@ let catA = [
 let nameCatB = "Clau Fashion";
 let catB = [];
 //Segunda Oportunidad
-let nameCatC = "Segunda Oportunidad";
+let nameCatC = "Second Change";
 let catC = [
   {
     id: "c1",
