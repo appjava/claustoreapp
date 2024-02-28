@@ -1,6 +1,6 @@
 {
   "hosting": {
-	"site": "plantazula",
+	"site": "claustore",
     "public": "public",
     "ignore": [
       "firebase.json",
