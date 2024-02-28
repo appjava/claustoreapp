@@ -78,7 +78,17 @@ let catA = [
 ];
 //Ropero
 let nameCatB = "Clau Fashion";
-let catB = [];
+let catB = [
+  {
+    id: "b1",
+    name: "Edredones",
+    price: 140000,
+    desc: "Edredón Doble Faz + Forros Cojín",
+    img: "images/productos/catB/b1/b1.jpg",
+    img1: "images/productos/catB/b1/b2.jpg",
+    img2: "images/productos/catB/b1/b3.jpg",
+  },
+];
 //Segunda Oportunidad
 let nameCatC = "Second Change";
 let catC = [
