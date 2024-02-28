@@ -15,10 +15,6 @@ document.getElementById("nameCatB").innerHTML = nameCatB;
 document.getElementById("namCatB").innerHTML = nameCatB;
 document.getElementById("nameCatC").innerHTML = nameCatC;
 document.getElementById("namCatC").innerHTML = nameCatC;
-document.getElementById("nameCatD").innerHTML = nameCatD;
-document.getElementById("namCatD").innerHTML = nameCatD;
-document.getElementById("nameCatE").innerHTML = nameCatE;
-document.getElementById("namCatE").innerHTML = nameCatE;
 
 let shop = document.getElementById("shop");
 let show = document.getElementById("show") || [];
@@ -199,12 +195,6 @@ function allPlants(){
   catC.forEach((planta) => {
     standItemsData.push(planta);
   });
-  catD.forEach((planta) => {
-    standItemsData.push(planta);
-  });
-  catE.forEach((planta) => {
-    standItemsData.push(planta);
-  });
  
   welco.innerHTML = "";
   onDet.innerHTML = "";
@@ -252,33 +242,15 @@ function onlyCatD(){
   detailCatD();
   generateShop();
 };
-function onlyCatE(){
-  standItemsData = [];
-  catE.forEach((planta) => {
-    standItemsData.push(planta);
-  });
-  welco.innerHTML = "";
-  onDet.innerHTML = "";
-  detailCatE();
-  generateShop();
-};
 
 
 function welcome() {
 	welco.innerHTML = `
 	<div class="detail" id="detail">
 	
-	<p class="detalle">¡Bienvenido a nuestro maravilloso mundo! Aquí encontrarás una exquisita selección de plantas que llenarán tu vida de color, frescura y belleza natural. Explora nuestra colección y déjate cautivar por la magia de la naturaleza.</p>
-	
-	</div>
-	
-	`;
-};
-function detailCatB() {
-	onDet.innerHTML = `
-	<div class="detail" id="detail">
-	<h3 class="detalle">${nameCatB}</h3>
-	<p class="detalle">Explora el encanto tropical de las bromelias: hojas vibrantes, flores en espiral y versatilidad para interiores y exteriores. ¡Embellece con magia exótica!</p>
+	<p class="detalle">¡Hola! Bienvenido a ClauStore, donde la belleza se encuentra con la sostenibilidad.
+
+  Descubre una amplia selección de productos de cuidado personal, moda y artículos de segunda mano para darle una segunda vida a tu estilo.</p>
 	
 	</div>
 	
@@ -288,7 +260,19 @@ function detailCatA() {
 	onDet.innerHTML = `
 	<div class="detail" id="detail">
 	<h3 class="detalle">${nameCatA}</h3>
-	<p class="detalle">Descubre la elegancia y diversidad de las suculentas: hojas carnosas, colores cautivadores y bajo mantenimiento. ¡Decora con encanto natural y sofisticado!</p>
+	<p class="detalle">Mímate y siente radiante. Descubre nuestra selección de productos para el cuidado personal.
+
+  Cremas, maquillaje, perfumes, higiene y más.</p>
+	
+	</div>
+	
+	`;
+};
+function detailCatB() {
+	onDet.innerHTML = `
+	<div class="detail" id="detail">
+	<h3 class="detalle">${nameCatB}</h3>
+	<p class="detalle">Tu estilo, tu esencia. Encuentra ropa y accesorios que te harán sentir segura y radiante en cualquier ocasión.</p>
 	
 	</div>
 	
@@ -298,27 +282,7 @@ function detailCatC() {
 	onDet.innerHTML = `
 	<div class="detail" id="detail">
 	<h3 class="detalle">${nameCatC}</h3>
-	<p class="detalle">Descubre la elegancia de las orquídeas: colores, formas y cuidado sencillo. ¡Flores espectaculares para tu hogar!</p>
-	
-	</div>
-	
-	`;
-};
-function detailCatD() {
-	onDet.innerHTML = `
-	<div class="detail" id="detail">
-	<h3 class="detalle">${nameCatD}</h3>
-	<p class="detalle">Descubre los anturios: exuberantes inflorescencias, colores vibrantes y cuidado sencillo. ¡Tropicalidad y pasión para tu hogar!</p>
-	
-	</div>
-	
-	`;
-};
-function detailCatE() {
-	onDet.innerHTML = `
-	<div class="detail" id="detail">
-	<h3 class="detalle">${nameCatE}</h3>
-	<p class="detalle">Explora los cartuchos: flores singulares, colores vibrantes y cuidado sencillo. ¡Elegancia acuática para tu espacio!</p>
+	<p class="detalle">Creemos en la moda sostenible y responsable. Ofrecemos ropa de segunda mano en excelentes condiciones, para que puedas renovar tu armario sin culpa. Encuentra piezas únicas y atemporales que te harán sentir especial.</p>
 	
 	</div>
 	

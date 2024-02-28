@@ -1,7 +1,7 @@
 
 let shopItemsData = [];
 //Cuidado Personal
-let nameCatA = "Personal Care";
+let nameCatA = "Armonía y Bienestar";
 let catA = [
   {
     id: "a1",
@@ -76,37 +76,27 @@ let catA = [
     img3: "images/productos/catA/a8/a4.jpg",
   },
 ];
-
-//Accesorios
-let nameCatB = "Accesorios";
-let catB = [];
-
 //Ropero
-let nameCatC = "Ropero";
-let catC = [];
-
-//Productos Aseo Personal
-let nameCatD = "Aseo Personal";
-let catD = [];
-
-//Second Change
-let nameCatE = "Second Change";
-let catE = [
+let nameCatB = "Clau Fashion";
+let catB = [];
+//Segunda Oportunidad
+let nameCatC = "Segunda Oportunidad";
+let catC = [
   {
-    id: "e1",
+    id: "c1",
     name: "Bolso de mano tipo baúl",
     price: 60000,
     desc: "Bolso de mano tipo baúl con correa adicional. Poco uso. Estado 8/10",
-    img: "images/productos/catE/e1/e1.jpg",
-    img1: "images/productos/catE/e1/e2.jpg",
+    img: "images/productos/catC/c1/c1.jpg",
+    img1: "images/productos/catC/c1/c2.jpg",
   },
   {
-    id: "e2",
+    id: "c2",
     name: "Blusa ELA",
     price: 60000,
     desc: "Blusa ELA talla M. Nueva sin etiqueta",
-    img: "images/productos/catE/e2/e1.jpg",
-    img1: "images/productos/catE/e2/e2.jpg",
+    img: "images/productos/catC/c2/c1.jpg",
+    img1: "images/productos/catC/c2/c2.jpg",
   },
 ];
 
@@ -119,11 +109,6 @@ catB.forEach((planta) => {
 catC.forEach((planta) => {
   shopItemsData.push(planta);
 });
-catD.forEach((planta) => {
-  shopItemsData.push(planta);
-});
-catE.forEach((planta) => {
-  shopItemsData.push(planta);
-});
+
 
 
