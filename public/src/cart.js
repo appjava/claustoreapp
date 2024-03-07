@@ -58,26 +58,22 @@ let generateCartItems = () => {
         let { id, item } = x;
         let search = shopItemsData.find((y) => y.id === id) || [];
         return `
-      <div class="cart-item">
-      <a href="product.html" onclick="selectionID(${id})"><img src=${search.img} alt="" /></a>
-        <div class="details-cart">
+        <div class="cart-item">
+          <a href="product.html" onclick="selectionID(${id})"><img src=${search.img} alt="" /></a>
           <div class="title-price-x">
               <h4 class="title-price">
                 <p>${search.name}</p>
-                <!--<p class="cart-item-price">$ ${search.price}</p>-->
               </h4>
           </div>
-          <h3>$ ${item * search.price} COP</h3>
-          <div class="title-price-x">
           <div class="buttons">
               <i onclick="decrement(${id})" class="bi bi-dash-square-fill"></i>
               <div id=${id} class="quantity">${item}</div>
               <i onclick="increment(${id})" class="bi bi-plus-square-fill"></i>
           </div>
-          <i onclick="removeItem(${id})" class="bi bi-trash"></i>
-          </div>
+          <h3 class="cart-item-price">$ ${item * search.price} COP</h3>
+          <!--<i onclick="removeItem(${id})" class="bi bi-trash"></i>-->
         </div>
-      </div>
+        <hr>
       `;
       })
       .join(""));

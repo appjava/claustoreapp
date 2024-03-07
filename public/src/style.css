@@ -17,6 +17,14 @@ a {
   text-decoration: none;
   color: gray;
 }
+hr{
+  max-width: 600px;
+  min-width: 400px;
+  width: 90%;
+  
+  height: 1px;
+  color: gray;
+}
 
 /**
 * ! Navbar STyles are here
@@ -320,6 +328,8 @@ a {
   flex-direction: row;
   gap: 6px;
   font-size: 15px;
+  background-color: none;
+  padding: 3px 6px;
 }
 .buttons-show {
   display: flex;
@@ -427,25 +437,30 @@ a {
   padding: 20px 10px;
   background-color: none;
 }
-.shopping-cart::after{
-  content: "";
-  width: 320px;
-}
+
 
 /**
 * ! style rules for cart-item
 **/
 
 .cart-item {
-  border: 2px solid #212529;
+  border: 2px none #212529;
   border-radius: 9px;
   display: flex;
+  align-items: center;
+  width: 60%;
+  background-color: none;
+  justify-content: space-around;
+  min-width: 400px;
+  max-width: 600px;
 }
 .cart-item img {
-  border: 2px none red;
-  width: 120px;
-  height: 120px;
+  border: 1px solid gray;
+  border-radius: 6px;
+  width: 60px;
+  height: 60px;
   object-fit: fill;
+  vertical-align: middle;
 }
 .details-cart {
   display: flex;
@@ -454,24 +469,32 @@ a {
   gap: 0px;
   justify-content: space-between;
 }
+
 .title-price-x {
-  width: 170px;
+  width: 35%;
   display: flex;
   align-items:center;
   justify-content:space-between;
+  background-color: white;
 }
-
 .title-price {
+  width: 100%;
   display: flex;
-  align-items: center;
-  gap: 9px;
+  text-align:left;
+  font-size: 15px;
+  background-color: none;
+  border-radius: 6px;
+  padding: 6px 6px;
 }
-
 .cart-item-price {
-  background-color: #292921;
+  background-color: gray;
   color: white;
   border-radius: 4px;
   padding: 3px 6px;
+  font-size: 15px;
+  min-width: 120px;
+  width: 20%;
+  text-align: center;
 }
 
 /*--------------------------*/
