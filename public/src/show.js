@@ -39,7 +39,7 @@ let showProduct = () => {
       return `
       
       <div class="showcase">
-          <img class="" src=${search.img === undefined ? ["images/logos/logoClau.png"] : search.img} >
+          <!--<img class="" src=${search.img === undefined ? ["images/logos/logoClau.png"] : search.img} >-->
           <img class="" src=${search.img1 === undefined ? ["images/logos/logoClau.png"] : search.img1} >
           <img class="" src=${search.img2 === undefined ? ["images/logos/logoClau.png"] : search.img2} >
           <img class="" src=${search.img3 === undefined ? ["images/logos/logoClau.png"] : search.img3} >
