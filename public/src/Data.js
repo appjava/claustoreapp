@@ -5,7 +5,7 @@ let nameCatA = "Armonía y Bienestar";
 let catA = [
   {
     id: "a1",
-    name: "Combo1",
+    name: "Crema y Splash Victoria's Secret",
     price: 45000,
     desc: "Crema Victoria's Secret 200ml + Splash Victoria's Secret 250ml",
     img: "images/productos/catA/a1/a1.jpg",
@@ -14,8 +14,8 @@ let catA = [
   },
   {
     id: "a2",
-    name: "Combo2",
-    price: 35000,
+    name: "Splash + Crema + Cosmetiquera",
+    price: 50000,
     desc: "Crema Victoria's Secret 200ml + Splash Victoria's Secret 250ml + Cosmetiquera",
     img: "images/productos/catA/a2/a1.jpg",
     img1: "images/productos/catA/a2/a2.jpg",
@@ -23,7 +23,7 @@ let catA = [
   },
   {
     id: "a3",
-    name: "Combo3",
+    name: "Mini Splash, Crema, Splash, Cosmetiquera",
     price: 65000,
     desc: "Crema 250ml + Splash 250ml + Mini splash 30ml+ Cosmetiquera Plástica",
     img: "images/productos/catA/a3/a1.jpg",
@@ -32,9 +32,9 @@ let catA = [
   },
   {
     id: "a4",
-    name: "Brllo labial",
-    price: 8000,
-    desc: "Brllo labial con efecto volumen",
+    name: "Brillos labiales Victoria's Secret",
+    price: 10000,
+    desc: "Brllo labial",
     img: "images/productos/catA/a4/a1.jpg",
     img1: "images/productos/catA/a4/a2.jpg",
     img2: "images/productos/catA/a4/a3.jpg",
@@ -48,9 +48,9 @@ let catA = [
   },
   {
     id: "a6",
-    name: "Combito",
+    name: "Mini Splash + Brllo",
     price: 15000,
-    desc: "Mini Splash + Brllo labialy",
+    desc: "Mini Splash y Brllo labial con efecto volumen",
     img: "images/productos/catA/a6/a1.jpg",
     img1: "images/productos/catA/a6/a2.jpg",
     img2: "images/productos/catA/a6/a3.jpg",

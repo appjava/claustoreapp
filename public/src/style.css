@@ -20,7 +20,7 @@ a {
 hr{
   max-width: 600px;
   min-width: 400px;
-  width: 90%;
+  width: 60%;
   
   height: 1px;
   color: gray;
@@ -236,7 +236,8 @@ hr{
 }
 .item img {
   width: 100%;
-  object-fit:fill;
+  object-fit: cover;
+  height: 250px;
 }
 .showcase{
   background-color: none;

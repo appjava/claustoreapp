@@ -16,6 +16,17 @@ document.getElementById("namCatB").innerHTML = nameCatB;
 document.getElementById("nameCatC").innerHTML = nameCatC;
 document.getElementById("namCatC").innerHTML = nameCatC;
 
+
+const menuBar = document.getElementById('menu-bar');
+const hideMenu = document.getElementById('shop');
+
+// Hide guide
+hideMenu.addEventListener('click', () => {
+  //menuBar.style.display = 'none';
+  //menuBar.innerHTML="HOLA";
+  menuBar.checked = false;
+});
+
 let shop = document.getElementById("shop");
 let show = document.getElementById("show") || [];
 let welco = document.getElementById("welcome");
