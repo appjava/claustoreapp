@@ -24,8 +24,9 @@ const levels = document.getElementById('levels');
 
 // Hide guide
 hideMenu.addEventListener('click', () => {
-  //menuBar.style.display = 'none';
-  //menuBar.innerHTML="HOLA";
+  menuBar.checked = false;
+});
+levels.addEventListener('click', () => {
   menuBar.checked = false;
 });
 
@@ -227,7 +228,7 @@ function onlyCatA(){
   onDet.innerHTML = "";
   detailCatA();
   generateShop();
-  categories.style.display="unset";
+  categories.style.display="block";
   levels.style.display="none";
 };
 function onlyCatB(){
@@ -239,7 +240,7 @@ function onlyCatB(){
   onDet.innerHTML = "";
   detailCatB();
   generateShop();
-  categories.style.display="unset";
+  categories.style.display="block";
   levels.style.display="none";
 };
 function onlyCatC(){
@@ -251,7 +252,7 @@ function onlyCatC(){
   onDet.innerHTML = "";
   detailCatC();
   generateShop();
-  categories.style.display="unset";
+  categories.style.display="block";
   levels.style.display="none";
 };
 function onlyCatD(){
@@ -263,10 +264,9 @@ function onlyCatD(){
   onDet.innerHTML = "";
   detailCatD();
   generateShop();
-  categories.style.display="unset";
+  categories.style.display="block";
   levels.style.display="none";
 };
-
 
 function welcome() {
 	welco.innerHTML = `

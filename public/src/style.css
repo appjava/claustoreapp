@@ -767,6 +767,9 @@ ul li:hover {
   .sections {
     display: none;
   }
+  .catego{
+    display: none;
+  }
   .subTot{
     position: absolute;
     top: 39px;
