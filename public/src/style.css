@@ -159,7 +159,14 @@ hr{
 /**
 * ! Shop items styles are here
 **/
-
+.levels {
+  display: grid;
+  grid-template-columns: repeat(3, 27%);
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 6px;
+  margin-top: 30px;
+}
 .shop {
   display: grid;
   grid-template-columns: repeat(2, 240px);
@@ -227,6 +234,10 @@ hr{
   height:auto;
   justify-content: space-between;
   margin-bottom: 6px;
+  gap: 12px;
+  background-color: white;
+  color: gray;
+  padding-bottom: 12px;
 }
 .item-show {
   border: 2px solid #212529;
@@ -236,7 +247,7 @@ hr{
 }
 .item img {
   width: 100%;
-  object-fit: cover;
+  object-fit: fill;
   height: 250px;
 }
 .showcase{
@@ -651,7 +662,7 @@ ul li:hover {
 }
 @media (min-width: 900px) and (max-width: 1200px){
   .shop {
-    grid-template-columns: repeat(3, 250px);
+    grid-template-columns: repeat(3, 270px);
     gap: 12px;
   }
   .logo{
@@ -673,6 +684,13 @@ ul li:hover {
     right: 6px;
     font-size: 15px;
   }
+  .levels {
+    grid-template-columns: repeat(3, 27%);
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 15px;
+    margin-top: 30px;
+  }
   .menu{
     display: none;
   }
@@ -681,7 +699,7 @@ ul li:hover {
 
 @media (min-width: 560px) and (max-width: 900px){
   .shop {
-    grid-template-columns: repeat(2, 250px);
+    grid-template-columns: repeat(2, 270px);
     gap: 9px;
   }
   .logo{
@@ -703,14 +721,21 @@ ul li:hover {
     right: 6px;
     font-size: 12px;
   }
+  .levels {
+    grid-template-columns: repeat(2, 42%);
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 15px;
+    margin-top: 30px;
+  }
   .desc-item{
     display: none;
   }
   .welcome{
-    display: none;
+    display: unset;
   }
   .onlyDetails{
-    display: none;
+    display: unset;
   }
   .menu{
     display: none;
@@ -720,7 +745,7 @@ ul li:hover {
 @media (min-width: 300px) and (max-width: 560px){
 
   .shop {
-    grid-template-columns: repeat(1, 250px);
+    grid-template-columns: repeat(1, 350px);
     gap: 3px;
   }
   .logo img {
@@ -732,7 +757,13 @@ ul li:hover {
   .bi-list{
     font-size: 24px;
   }
-  
+  .levels {
+    grid-template-columns: repeat(1, 75%);
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 15px;
+    margin-top: 30px;
+  }
   .sections {
     display: none;
   }
@@ -756,7 +787,7 @@ ul li:hover {
 	color:black;
   }
   .welcome{
-    display: none;
+    display: unset;
   }
   .logo h2{
 	padding-top: 9px;

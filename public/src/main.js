@@ -19,6 +19,8 @@ document.getElementById("namCatC").innerHTML = nameCatC;
 
 const menuBar = document.getElementById('menu-bar');
 const hideMenu = document.getElementById('shop');
+const categories = document.getElementById('categories');
+const levels = document.getElementById('levels');
 
 // Hide guide
 hideMenu.addEventListener('click', () => {
@@ -102,6 +104,7 @@ let generateShop = () => {
     .join(""));
 };
 
+welcome();
 //allPlants();
 //generateShop();
 
@@ -224,6 +227,8 @@ function onlyCatA(){
   onDet.innerHTML = "";
   detailCatA();
   generateShop();
+  categories.style.display="unset";
+  levels.style.display="none";
 };
 function onlyCatB(){
   standItemsData = [];
@@ -234,6 +239,8 @@ function onlyCatB(){
   onDet.innerHTML = "";
   detailCatB();
   generateShop();
+  categories.style.display="unset";
+  levels.style.display="none";
 };
 function onlyCatC(){
   standItemsData = [];
@@ -244,6 +251,8 @@ function onlyCatC(){
   onDet.innerHTML = "";
   detailCatC();
   generateShop();
+  categories.style.display="unset";
+  levels.style.display="none";
 };
 function onlyCatD(){
   standItemsData = [];
@@ -254,6 +263,8 @@ function onlyCatD(){
   onDet.innerHTML = "";
   detailCatD();
   generateShop();
+  categories.style.display="unset";
+  levels.style.display="none";
 };
 
 
@@ -268,6 +279,7 @@ function welcome() {
 	</div>
 	
 	`;
+  categories.style.display="none";
 };
 function detailCatA() {
 	onDet.innerHTML = `
