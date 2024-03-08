@@ -31,7 +31,9 @@ let shop = document.getElementById("shop");
 let show = document.getElementById("show") || [];
 let welco = document.getElementById("welcome");
 let onDet = document.getElementById("onlyDetails");
+
 let standItemsData = [];
+
 let productShow = [];
 let productSelect = JSON.parse(localStorage.getItem("producto")) || [];
   
@@ -100,8 +102,8 @@ let generateShop = () => {
     .join(""));
 };
 
-allPlants();
-generateShop();
+//allPlants();
+//generateShop();
 
 let increment = (id) => {
   let selectedItem = id;
