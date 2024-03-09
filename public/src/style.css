@@ -159,6 +159,7 @@ hr{
 /**
 * ! Shop items styles are here
 **/
+/*
 .levels {
   display: grid;
   grid-template-columns: repeat(3, 27%);
@@ -167,6 +168,23 @@ hr{
   margin-bottom: 6px;
   margin-top: 30px;
 }
+*/
+
+.levels {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 10px;
+  background-color: none;
+}
+
+
 .shop {
   display: grid;
   grid-template-columns: repeat(2, 240px);
@@ -228,7 +246,7 @@ hr{
 .item {
   display: flex;
   flex-direction: column;
-  border: 2px solid #212529;
+  border: 1px solid gray;
   border-radius: 9px;
   text-align: center;
   height:auto;
@@ -249,6 +267,7 @@ hr{
   width: 100%;
   object-fit: fill;
   height: 250px;
+  border-radius: 9px 9px 0 0;
 }
 .showcase{
   background-color: none;
@@ -289,24 +308,25 @@ hr{
 }
 .price-item{
   background-color: none;
-  font-size: 14px;
+  font-size: 18px;
 }
 .price-item-show{
   background-color: none;
-  font-size: 14px;
+  font-size: 15px;
 }
 .bi-cart-plus-fill{
   color: #a501b4;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 21px;
   margin: 0;
   background-color: none;
 }
 .quantity-item{
   background-color: none;
-  padding-top: 0px;
+  padding: 3px 6px;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 15px;
+  
 }
 .quantity-item-show{
   background-color: none;
@@ -329,7 +349,7 @@ hr{
 .price-quantity {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 12px 12px;
   background-color: none;
@@ -684,13 +704,14 @@ ul li:hover {
     right: 6px;
     font-size: 15px;
   }
+  /*
   .levels {
     grid-template-columns: repeat(3, 27%);
     gap: 15px;
     justify-content: center;
     margin-bottom: 15px;
     margin-top: 30px;
-  }
+  }*/
   .menu{
     display: none;
   }
@@ -721,13 +742,14 @@ ul li:hover {
     right: 6px;
     font-size: 12px;
   }
+  /*
   .levels {
     grid-template-columns: repeat(2, 42%);
     gap: 15px;
     justify-content: center;
     margin-bottom: 15px;
     margin-top: 30px;
-  }
+  }*/
   .desc-item{
     display: none;
   }
@@ -757,13 +779,14 @@ ul li:hover {
   .bi-list{
     font-size: 24px;
   }
+  /*
   .levels {
     grid-template-columns: repeat(1, 75%);
     gap: 15px;
     justify-content: center;
     margin-bottom: 15px;
     margin-top: 30px;
-  }
+  }*/
   .sections {
     display: none;
   }
@@ -786,8 +809,7 @@ ul li:hover {
   }
   .price-quantity h3{
 	padding-top: 3px;
-	font-size: 12px;
-	color:black;
+	font-size: 15px;
   }
   .welcome{
     display: unset;

@@ -8,7 +8,7 @@ let catA = [
     name: "Crema y Splash Victoria's Secret",
     price: 45000,
     desc: "Crema Victoria's Secret 200ml + Splash Victoria's Secret 250ml",
-    img: "images/productos/catA/a1/cover2.gif",
+    img: "images/productos/catA/a1/cover1.gif",
     img1: "images/productos/catA/a1/a1.jpg",
     img2: "images/productos/catA/a1/a2.jpg",
     img3: "images/productos/catA/a1/a3.jpg",
