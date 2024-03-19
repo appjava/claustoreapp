@@ -249,8 +249,8 @@ function sendEmail(){
     userTotal: total
   };
 
-const serviceID = "service_hpd8bdi";
-const templateID = "template_b298aw9";
+const serviceID = "service_v2byykt";
+const templateID = "template_rjgcndv";
 
 if (Name == "" || Email == "" ||  Phone == ""){
   alert("Por favor completa la información de contacto para hacer pedido, gracias.")

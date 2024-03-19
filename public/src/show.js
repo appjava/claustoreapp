@@ -38,11 +38,19 @@ let showProduct = () => {
       let search2 = basket.find((x) => x.id === id) || [];
       return `
       
-      <div class="showcase">
-          <!--<img class="" src=${search.img === undefined ? ["images/logos/logoClau.png"] : search.img} >-->
+      <!--<div class="showcase">
+          <img class="" src=${search.img === undefined ? ["images/logos/logoClau.png"] : search.img} >
           <img class="" src=${search.img1 === undefined ? ["images/logos/logoClau.png"] : search.img1} >
           <img class="" src=${search.img2 === undefined ? ["images/logos/logoClau.png"] : search.img2} >
           <img class="" src=${search.img3 === undefined ? ["images/logos/logoClau.png"] : search.img3} >
+      </div>-->
+      <div class="showcase">
+      <div class="pic-ctn">
+          <img src=${search.img === undefined ? ["images/logos/logoClau.png"] : search.img} alt="" class="pic">
+          <img src=${search.img1 === undefined ? ["images/logos/logoClau.png"] : search.img1} alt="" class="pic">
+          <img src=${search.img2 === undefined ? ["images/logos/logoClau.png"] : search.img2} alt="" class="pic">
+          <img src=${search.img3 === undefined ? ["images/logos/logoClau.png"] : search.img3} alt="" class="pic">
+      </div>
       </div>
       <div>
       <div class="detail">
